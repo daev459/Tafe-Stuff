@@ -129,5 +129,14 @@ body {
 .social {
     display: flex;
     flex-direction: row;
-    gap: 1.5em;
+    gap: 1.5em; 
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    gap: 5px;
 }
