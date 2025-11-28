@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=person" > -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=favorite,person,shopping_basket" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
 </head>
 
@@ -60,6 +61,11 @@
     <div class="contact-banner"></div>
     <!-- content -->
     <main class="content">
+        <nav class="breadcrumbs">
+            <a href="/">Home</a>
+            <span class="separator">/</span>
+            <span class="active">Contact</span>
+        </nav>
         <div class="card-container">
             <div class="card">
                 <div class="card-content">
@@ -79,7 +85,7 @@
                 </div>
             </div>
             <div class="card">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.297168906964!2d151.18494191145473!3d-33.82138071649301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1762767352690!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.297168906964!2d151.18494191145473!3d-33.82138071649301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1762767352690!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="card">
                 <form id="contact" action="https://example.com/form" method="post">
