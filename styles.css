@@ -83,7 +83,7 @@ nav a:hover {
     overflow: hidden;
     flex: 1;
     min-width: 360px;
-    background-color: #E8F4F3; /* ← faint teal */
+    background-color: #E8F4F3; 
 }
 .card button {
     min-width: 100%;
@@ -100,7 +100,6 @@ nav a:hover {
 .banner2 {
     display: flex;
     flex-direction: column;
-    /* gap: 1em; */
     justify-content: center;
     align-items: center;
     padding: 4em;
@@ -181,7 +180,7 @@ nav a:hover {
 .breadcrumbs .active {
     font-weight: bold;
 }
-/* Home page sections */
+
 .home-section {
     margin-bottom: 3em;
 }
@@ -191,16 +190,16 @@ nav a:hover {
     margin-bottom: 1.5em;
 }
 
-/* Make the 'new season arrivals' cards sit nicely */
+
 .card-container-wide {
-    justify-content: center; /* uses flex from .card-container */
+    justify-content: center;
 }
 
 .card-wide {
-    flex: 1 1 280px;  /* grow, shrink, base width */
+    flex: 1 1 280px;  
 }
 
-/* Shop by style buttons */
+
 .style-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -220,17 +219,15 @@ nav a:hover {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 1em 2em;
-    background-color: #1C5A57;  /* ← DARK TEAL */
+    background-color: #1C5A57; 
     gap: 2em;
 }
 
-/* Logo */
 .header-logo .logo {
     width: 70px;
     height: auto;
 }
 
-/* Navigation */
 .main-nav {
     display: flex;
     gap: 2em;
@@ -259,14 +256,12 @@ nav a:hover {
     transform: scaleX(1);
 }
 
-/* Right-side: search + icons */
 .header-actions {
     display: flex;
     align-items: center;
     gap: 1.5em;
 }
 
-/* KEEP your existing search form styling */
 #search input {
     padding: 0.4em 1em;
     border: 1px solid #ccc;
@@ -281,7 +276,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Icons */
 .icon-nav {
     display: flex;
     gap: 1em;
@@ -296,7 +290,7 @@ nav a:hover {
 #search button {
     color: white !important;
     border-color: white !important;
-    background-color: transparent; /* keep it clean */
+    background-color: transparent; 
 }
 
 #search button:hover {
@@ -307,42 +301,39 @@ nav a:hover {
     color: white !important;
 }
 
-/* Buttons inside the first four cards */
+
 .card-container .card button {
-    background-color: #C4E5E2;    /* slightly darker teal */
-    color: #1C5A57;               /* dark teal text for contrast */
+    background-color: #C4E5E2;    
+    color: #1C5A57;             
     border: 1px solid #1C5A57;
     padding: 0.6em;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    transition: 0.2s ease;       /* smooth hover animation */
+    transition: 0.2s ease;       
 }
 
 .card-container .card button:hover {
-    background-color: #A8D8D5;           /* darker teal on hover */
+    background-color: #A8D8D5;           
     border-color: #1C5A57;
 }
 
-/* Dropdown container */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Top-level link */
 .dropbtn {
-    color: white;               /* your header text colour */
+    color: white;               
     text-decoration: none;
     padding: 0.5em 0;
     display: inline-block;
 }
 
-/* Dropdown panel (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1C5A57;  /* teal dropdown background */
+    background-color: #1C5A57; 
     min-width: 180px;
     padding: 0.5em 0;
     border-radius: 6px;
@@ -350,7 +341,6 @@ nav a:hover {
     z-index: 10;
 }
 
-/* Dropdown links */
 .dropdown-content a {
     color: white;
     padding: 0.6em 1em;
@@ -359,9 +349,8 @@ nav a:hover {
     font-size: 0.95rem;
 }
 
-/* Hover style for dropdown links */
 .dropdown-content a:hover {
-    background-color: #2F7C78; /* lighter teal on hover */
+    background-color: #2F7C78; 
 }
 
 /* Show dropdown on hover */
@@ -369,12 +358,10 @@ nav a:hover {
     display: block;
 }
 
-/* Keep underline hover from your old nav styling */
 .main-nav a {
     position: relative;
 }
 
-/* Adjust underline for dropdown buttons too */
 .dropbtn::after {
     content: "";
     position: absolute;
@@ -390,3 +377,62 @@ nav a:hover {
 .dropbtn:hover::after {
     transform: scaleX(1);
 }
+/* FOOTER BASE */
+.footer {
+    background-color: #1C5A57; 
+    padding: 2em 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+/* SOCIAL SECTION */
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8em;
+}
+
+/* ICON ROW */
+.social-icons {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ICON STYLE */
+.social-icons i {
+    font-size: 2rem;
+    color: white;
+    transition: 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.social-icons i:hover {
+    color: #A8D8D5; 
+}
+
+/* LEGAL LINKS */
+.legal {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;  
+    width: 100%;              
+}
+
+.legal a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
