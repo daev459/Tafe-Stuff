@@ -31,6 +31,9 @@ body {
 .navigation {
     display: flex;
 }
+nav a:hover {
+    font-weight: bold;
+}
 .nav-button {
     background-color: transparent;
     border-color: transparent;
@@ -70,6 +73,9 @@ body {
 }
 .card-content {
     padding: 1em;
+}
+.card-content p {
+    text-align: justify;
 }
 .card {
     border: 1px solid #a4a4a4;
@@ -129,14 +135,43 @@ body {
 .social {
     display: flex;
     flex-direction: row;
-    gap: 1.5em; 
+    gap: 1.5em;
 }
 #contact {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
     gap: 5px;
+}
+#contact input, #contact textarea {
+    margin-bottom: 1em;
+    padding: 5px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons > button {
+    min-width: 100px;
+}
+#map {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    gap: 10px;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: #08090A;
+}
+.breadcrumbs .active {
+    font-weight: bold;
 }
