@@ -44,7 +44,7 @@ nav a:hover {
     color: #CCCCCC;
     display: flex;
     flex-direction: column;
-    min-height: 50vh;
+    min-height: 35vh;
     justify-content: center;
     align-items: center;
 }
@@ -83,6 +83,7 @@ nav a:hover {
     overflow: hidden;
     flex: 1;
     min-width: 360px;
+    background-color: #E8F4F3; /* ← faint teal */
 }
 .card button {
     min-width: 100%;
@@ -213,4 +214,179 @@ nav a:hover {
     background-color: transparent;
     font-weight: 600;
     cursor: pointer;
+}
+.page-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1C5A57;  /* ← DARK TEAL */
+    gap: 2em;
+}
+
+/* Logo */
+.header-logo .logo {
+    width: 70px;
+    height: auto;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #888;
+    transform: scaleX(0);
+    transition: 0.2s ease;
+}
+
+.main-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Right-side: search + icons */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+/* KEEP your existing search form styling */
+#search input {
+    padding: 0.4em 1em;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+#search button {
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    border: 1px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Icons */
+.icon-nav {
+    display: flex;
+    gap: 1em;
+}
+
+.icon-nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#search button {
+    color: white !important;
+    border-color: white !important;
+    background-color: transparent; /* keep it clean */
+}
+
+#search button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.icon-nav a {
+    color: white !important;
+}
+
+/* Buttons inside the first four cards */
+.card-container .card button {
+    background-color: #C4E5E2;    /* slightly darker teal */
+    color: #1C5A57;               /* dark teal text for contrast */
+    border: 1px solid #1C5A57;
+    padding: 0.6em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;       /* smooth hover animation */
+}
+
+.card-container .card button:hover {
+    background-color: #A8D8D5;           /* darker teal on hover */
+    border-color: #1C5A57;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Top-level link */
+.dropbtn {
+    color: white;               /* your header text colour */
+    text-decoration: none;
+    padding: 0.5em 0;
+    display: inline-block;
+}
+
+/* Dropdown panel (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1C5A57;  /* teal dropdown background */
+    min-width: 180px;
+    padding: 0.5em 0;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 0.6em 1em;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+}
+
+/* Hover style for dropdown links */
+.dropdown-content a:hover {
+    background-color: #2F7C78; /* lighter teal on hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Keep underline hover from your old nav styling */
+.main-nav a {
+    position: relative;
+}
+
+/* Adjust underline for dropdown buttons too */
+.dropbtn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #A8D8D5;
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+
+.dropbtn:hover::after {
+    transform: scaleX(1);
 }

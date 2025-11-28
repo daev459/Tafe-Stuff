@@ -20,116 +20,174 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <button class="nav-button">
-            <img src="images/menu_48dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg">
-        </button>
-        <a href="index.html">
-            <img class="logo" src="images/TipToe Soles_Logo_colour.png">
-        </a>
-        <nav class="navigation" id="categories">
-            <a href="men.html">Men</a>
-            <a href="women.html">Women</a>
-            <a href="accessories.html">Accessories</a>
-            <a href="services.html">Services</a>
-        </nav>
+
+<header class="page-header">
+
+    <!-- Left: Logo -->
+    <a href="index.html" class="header-logo">
+        <img class="logo" src="images/TipToe Soles_Logo_colour.png" alt="Logo">
+    </a>
+
+    <!-- Middle: Navigation -->
+    <nav class="main-nav">
+
+        <!-- MEN dropdown -->
+        <div class="dropdown">
+            <a href="products.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="men-all.html">All Products</a>
+                <a href="new.html">New Products</a>
+                <a href="men-all.html">Mens</a>
+                <a href="women-all.html">Womens</a>
+                <a href="kids.html">Kids</a>
+                <a href="style.html">Style</a>
+                <a href="sale.html">Sale</a>
+            </div>
+        </div>
+
+        <!-- WOMEN dropdown -->
+        <div class="dropdown">
+            <a href="women.html" class="dropbtn">Women</a>
+            <div class="dropdown-content">
+                <a href="women-all.html">All Women's Shoes</a>
+                <a href="women-new.html">New Women's Shoes</a>
+                <a href="women-sale.html">Women's Sale</a>
+            </div>
+        </div>
+
+        <!-- KIDS dropdown -->
+        <div class="dropdown">
+            <a href="kids.html" class="dropbtn">Kids</a>
+            <div class="dropdown-content">
+                <a href="kids-all.html">All Kids Shoes</a>
+                <a href="kids-new.html">New Kids Shoes</a>
+                <a href="kids-sale.html">Kids Sale</a>
+            </div>
+        </div>
+
+        <!-- ACCESSORIES dropdown -->
+        <div class="dropdown">
+            <a href="accessories.html" class="dropbtn">Accessories</a>
+            <div class="dropdown-content">
+                <a href="shoe-care.html">Shoe Care</a>
+                <a href="shoe-laces.html">Shoe Laces</a>
+            </div>
+        </div>
+
+        <!-- SERVICES dropdown -->
+        <div class="dropdown">
+            <a href="services.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="help-center.html">Help Center (FAQs)</a>
+                <a href="guides.html">Guides</a>
+                <a href="track-order.html">Track Your Order</a>
+                <a href="find-store.html">Find a Store</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Right: Search + Icons -->
+    <div class="header-actions">
+
+        <!-- Your original search bar + button -->
         <form id="search">
             <input type="search" placeholder="search for a product" id="keywords" name="keywords">
             <button type="submit">Search</button>
         </form>
-        <nav class="navigation" id="user">
-            <a href="account.html">
-                <!-- Account -->
-                <span class="material-symbols-outlined">
-                    person
-                </span>
-            </a>
-            <a href="wishlist.html">
-                <!-- Wishlist -->
-                <span class="material-symbols-outlined">
-                    favorite
-                </span>
-            </a>
-            <a href="cart.html">
-                <!-- Car1   q```    t -->
-                <span class="material-symbols-outlined">
-                    shopping_basket
-                </span>
-            </a>
+
+        <!-- Icons -->
+        <nav class="icon-nav">
+            <a href="account.html"><span class="material-symbols-outlined">person</span></a>
+            <a href="wishlist.html"><span class="material-symbols-outlined">favorite</span></a>
+            <a href="cart.html"><span class="material-symbols-outlined">shopping_basket</span></a>
         </nav>
-    </header>
+    </div>
+</header>
+
     <!-- banner -->
     <div class="banner">
         <h2>Black Friday Sale!</h2>
         <button>Shop Black Friday</button>
     </div>
-        <!-- content -->
-    <main class="content">
+    <!-- content -->
+<main class="content">
 
-        <!-- Explore our range -->
-        <section class="home-section">
-            <h2>Explore our range</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="images/categories/mens.jpg" alt="Men's shoes">
-                    <div class="card-content">
-                        <h3>Mens</h3>
-                        <button>Shop men's shoes</button>
-                    </div>
-                </div>
+    <!-- Explore our range -->
+    <section class="home-section">
+        <h2>Explore our range</h2>
+        <div class="card-container">
 
-                <div class="card">
-                    <img src="images/categories/womens.jpg" alt="Women's shoes">
-                    <div class="card-content">
-                        <h3>Womens</h3>
-                        <button>Shop women's shoes</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/categories/kids.jpg" alt="Kids' shoes">
-                    <div class="card-content">
-                        <h3>Kids</h3>
-                        <button>Shop kids' shoes</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/categories/sale.jpg" alt="Sale shoes">
-                    <div class="card-content">
-                        <h3>Sale</h3>
-                        <button>Shop sale</button>
-                    </div>
+            <!-- Mens -->
+            <div class="card">
+                <img src="images/Index Images/mens.jpg" alt="Men's shoes">
+                <div class="card-content">
+                    <h3>Mens</h3>
+                    <button>Shop men's shoes</button>
                 </div>
             </div>
-        </section>
 
-        <!-- New season arrivals -->
-        <section class="home-section">
-            <h2>New season arrivals</h2>
-            <div class="card-container card-container-wide">
-                <div class="card card-wide">
-                    <img src="images/new/mens-new.jpg" alt="Men's new season shoes">
-                    <div class="card-content">
-                        <h3>Shop men's new shoes</h3>
-                    </div>
-                </div>
-
-                <div class="card card-wide">
-                    <img src="images/new/womens-new.jpg" alt="Women's new season shoes">
-                    <div class="card-content">
-                        <h3>Shop women's new shoes</h3>
-                    </div>
-                </div>
-
-                <div class="card card-wide">
-                    <img src="images/new/kids-new.jpg" alt="Kids' new season shoes">
-                    <div class="card-content">
-                        <h3>Shop kids' new shoes</h3>
-                    </div>
+            <!-- Womens -->
+            <div class="card">
+                <img src="images/Index Images/womens.jpg" alt="Women's shoes">
+                <div class="card-content">
+                    <h3>Womens</h3>
+                    <button>Shop women's shoes</button>
                 </div>
             </div>
-        </section>
+
+            <!-- Kids -->
+            <div class="card">
+                <img src="images/Index Images/kids.jpg" alt="Kids' shoes">
+                <div class="card-content">
+                    <h3>Kids</h3>
+                    <button>Shop kids' shoes</button>
+                </div>
+            </div>
+
+            <!-- Sale -->
+            <div class="card">
+                <img src="images/Index Images/sale.jpg" alt="Sale items">
+                <div class="card-content">
+                    <h3>Sale</h3>
+                    <button>Shop sale</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- New season arrivals -->
+<section class="home-section">
+    <h2>New season arrivals</h2>
+    <div class="card-container card-container-wide">
+
+        <!-- Men's new -->
+        <div class="card card-wide">
+            <img src="images/Index Images/mens-new.jpg" alt="Men's new season shoes">
+            <div class="card-content">
+                <h3>Shop men's new shoes</h3>
+            </div>
+        </div>
+
+        <!-- Women's new -->
+        <div class="card card-wide">
+            <img src="images/Index Images/womens-new.jpg" alt="Women's new season shoes">
+            <div class="card-content">
+                <h3>Shop women's new shoes</h3>
+            </div>
+        </div>
+
+        <!-- Kids' new -->
+        <div class="card card-wide">
+            <img src="images/Index Images/kids-new.jpg" alt="Kids' new season shoes">
+            <div class="card-content">
+                <h3>Shop kids' new shoes</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
 
         <!-- Shop by style -->
         <section class="home-section">
@@ -142,10 +200,10 @@
             </div>
         </section>
 
-        <!-- Optional: keep your Holiday Sale banner at the bottom -->
+        <!-- Optional: keep your VIP banner at the bottom -->
         <div class="banner2">
-            <h2>Holiday Sale</h2>
-            <button><h2>Shop Holiday Sale</h2></button>
+            <h2>Become a VIP today for further discounts!</h2>
+            <button><h2>Sign Up as VIP</h2></button>
         </div>
     </main>
      <footer class="footer">
