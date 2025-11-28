@@ -105,7 +105,12 @@ nav a:hover {
     padding: 4em;
     margin-top: 1em;
     margin-bottom: 1em;
-    background: linear-gradient( to bottom right, purple, pink);
+    background: linear-gradient(
+    to bottom right,
+    #2F7C78,
+    #66A5A1
+);
+
 }
 
 .footer {
